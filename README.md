@@ -1,0 +1,1 @@
+Trybe-Exercicios foi criado para colocar em pratica todo conhecimento adquirido no dia a dia do curso.
