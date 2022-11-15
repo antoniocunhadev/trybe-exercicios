@@ -1,2 +1,2 @@
 # Meu repositório de exercícios
-Aqui está todos os exercícios feitos diariamente
+Aqui estão todos os exercícios feitos diariamente
