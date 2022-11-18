@@ -1,17 +1,38 @@
-h1, p {
-  text-align: center;
+div:hover {
+  border: 3px solid black;
+  border-width: 6px;
 }
-
-li:hover {
+#amarelo:hover {
+  background-color: yellow;
+}
+#azul:hover {
+  background-color: blue;
+}
+#vermelho:hover {
   background-color: red;
+  font-size: 30px;
 }
-
-li:active {
-  color: antiquewhite;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 25px;
+#verde:hover {
+  background-color: green;
 }
-
-ul, ol {
-  list-style: none;
+#roxo:hover {
+  background-color: violet;
+}
+.impar {
+  font-style: italic;
+}
+#cor-primaria {
+  color: crimson;
+}
+#cor-secundaria {
+  color: aquamarine;
+}
+#cor-complementar {
+  color: cornflowerblue;
+}
+#cor-escura {
+  color: darkslategray;
+}
+#cor-clara {
+  color: bisque;
 }
