@@ -1,38 +1,52 @@
-div:hover {
-  border: 3px solid black;
-  border-width: 6px;
-}
-#amarelo:hover {
+ol.background {
   background-color: yellow;
 }
-#azul:hover {
-  background-color: blue;
+li.par {
+  color: green;
 }
-#vermelho:hover {
-  background-color: red;
-  font-size: 30px;
+li.impar {
+  text-transform: uppercase;
 }
-#verde:hover {
-  background-color: green;
+
+.header {
+  color: red;
 }
-#roxo:hover {
-  background-color: violet;
+
+h1.header {
+  font-size: 40px;
+  border: 1px solid black;
 }
-.impar {
-  font-style: italic;
+
+.li {
+  font-size: 20px;
 }
-#cor-primaria {
-  color: crimson;
+
+.italic {
+  font-weight: bold;
 }
-#cor-secundaria {
-  color: aquamarine;
+
+li.backlist {
+  color: blue;
 }
-#cor-complementar {
-  color: cornflowerblue;
+li.java {
+  background-color: pink;
 }
-#cor-escura {
-  color: darkslategray;
+
+.aliados:hover {
+  font-weight: bold;
 }
-#cor-clara {
-  color: bisque;
+#orange:hover {
+  color: orange;
+}
+#green:hover {
+  color: green;
+}
+#black:hover {
+  color: black;
+}
+#yellow:hover {
+  color: yellow;
+}
+#greenlight:hover {
+  color: greenyellow;
 }
