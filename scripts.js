@@ -1,5 +1,9 @@
-const myName = "Antonio"
-const birthCity = "Rio de Janeiro"
-let birthYear = 2030
+let patientId = 50;
+let isEnrolled = true;
+const patientInfo = {
+  firstName: 'Ana',
+  lastName: 'Santos',
+};
+const patientEmail = 'ana@email.com';
 
-console.log (birthCity)
+console.log (typeof patientAge)
