@@ -1,4 +1,4 @@
-let patientId = 50;
+let patientId = '50';
 let isEnrolled = true;
 const patientInfo = {
   firstName: 'Ana',
@@ -6,4 +6,4 @@ const patientInfo = {
 };
 const patientEmail = 'ana@email.com';
 
-console.log (typeof patientAge)
+console.log (typeof patientId)
