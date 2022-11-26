@@ -1,5 +1,5 @@
 const myName = "Antonio"
-const birthCity = "São Paulo"
+const birthCity = "Rio de Janeiro"
 let birthYear = 2030
 
-console.log (birthYear)
+console.log (birthCity)
