@@ -1,24 +1,13 @@
-const currentHour = 13.59
-let message =''
+const bebidaPrincipal =  'cafe';
+const bebidaAlternativa = 'suco de laranja';
 
-if (currentHour >= 22) {
-  console.log ('Não deveríamos comer nada é hora de dormir');
+if (bebidaPrincipal === 'cafezinho' || bebidaAlternativa === 'suco de laranja') {
+  console.log("Obrigado por me atender :D")
+} else {
+  console.log("Ei, eu não pedi isso!");
 }
 
-else if (currentHour >= 18 && currentHour < 21.59) {
-  console.log ('Rango da noite, vamos jantar :D');
-}
-
-else if (currentHour >= 14 && currentHour < 17.59) {
-  console.log ('Vamos fazer um bolo pro café da tarde?');
-}
-
-else if (currentHour > 11 && currentHour < 14) {
-  console.log ('Hora do almoço!!!');
-}
-
-else if (currentHour > 4 && currentHour < 11 ) {
-  console.log ('Hmmm, cheiro de café recém-passado');
-}
-
-console.log (message)
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
