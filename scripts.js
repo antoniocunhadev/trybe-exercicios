@@ -1,17 +1,21 @@
-let trafficLight = "amarelo";
 
-switch (trafficLight) {
-  case "vermelho":
-    console.log("pare")
+let situacao = "aprovado";
+
+switch (situacao) {
+  case "aprovado":
+    console.log("Parabéns, você foi aprovada(o)!")
     break;
   
-  case "amarelo":
-    console.log("atenção")
+  case "lista":
+    console.log("Você está na nossa lista de espera")
     break;
   
-  case "verde":
-    console.log("siga")
-    break;   
+  case "reprovado":
+    console.log("Você foi reprovada(o)")
+    break; 
+   
+  default:
+    console.log ("Informação incorreta")  
 }
 
-console.log (trafficLight);
+console.log (situacao);
