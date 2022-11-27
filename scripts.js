@@ -1,13 +1,11 @@
-const bebidaPrincipal =  'cafe';
-const bebidaAlternativa = 'suco de laranja';
+let weekDay = "domingo";
 
-if (bebidaPrincipal === 'cafezinho' || bebidaAlternativa === 'suco de laranja') {
-  console.log("Obrigado por me atender :D")
-} else {
-  console.log("Ei, eu não pedi isso!");
+if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira")  {
+  console.log ("Oba, mais um dia de aprendizado na Trybe >:D");
 }
 
-console.log(true || true); // true
-console.log(true || false); // true
-console.log(false || true); // true
-console.log(false || false); // false
+else { 
+  console.log ("FINALMENTE, descanso merecido UwU");
+}
+
+console.log (weekDay);
