@@ -1,11 +1,14 @@
-let weekDay = "domingo";
+console.log(!(2 + 2) === 4);
 
-if (weekDay === "segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira")  {
-  console.log ("Oba, mais um dia de aprendizado na Trybe >:D");
-}
+const squirtle = "melhor pokemon inicial";
 
-else { 
-  console.log ("FINALMENTE, descanso merecido UwU");
-}
+console.log(!squirtle); // false
 
-console.log (weekDay);
+console.log(!42); // false
+
+console.log(!0); // true
+// O número 0 tem o valor "falsy" no javascript. Logo, seu oposto é true.
+
+console.log(!null); // true
+
+console.log(!undefined); // true
