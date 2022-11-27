@@ -1,27 +1,17 @@
+let trafficLight = "amarelo";
 
-mes = 'trybe';
-let estacaoDoAno = '?';
-
-switch (mes) {
-    case 'janeiro':
-    case 'fevereiro':
-    case 'março':
-        estacaoDoAno = 'Verão';
-        break;
-    case 'abril':
-    case 'maio':
-    case 'junho':
-        estacaoDoAno = 'Outono';
-        break;
-    case 'julho':
-    case 'agosto':
-    case 'setembro':
-        estacaoDoAno = 'Inverno';
-        break;
-    case 'outubro':
-    case 'novembro':
-    case 'dezembro':
-        estacaoDoAno = 'Primavera';
+switch (trafficLight) {
+  case "vermelho":
+    console.log("pare")
+    break;
+  
+  case "amarelo":
+    console.log("atenção")
+    break;
+  
+  case "verde":
+    console.log("siga")
+    break;   
 }
 
-console.log(estacaoDoAno); // 'Outono'
+console.log (trafficLight);
