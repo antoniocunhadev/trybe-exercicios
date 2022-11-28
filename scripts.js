@@ -1,5 +1,5 @@
 
-let situacao = "aprovado";
+let situacao = "trybe";
 
 switch (situacao) {
   case "aprovado":
