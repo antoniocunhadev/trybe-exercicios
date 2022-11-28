@@ -104,5 +104,14 @@ else {
   console.log ('Porcentagem invalida')
 }
 
+// oitavo exercicio
 
+let a = 11
+let b = 10
+let c = 9
 
+if (a % 2 || b % 2 || c % 2) {
+  console.log (true)
+} else {
+  console.log (false)
+}
