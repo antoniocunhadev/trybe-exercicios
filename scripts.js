@@ -143,6 +143,7 @@ else if (valorDeCusto <= 0) {
   console.log ('erro ao inserir valores')
 }
 
+// decimo primeiro exercicio
 
 
 
