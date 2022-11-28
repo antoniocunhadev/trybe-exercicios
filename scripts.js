@@ -117,3 +117,16 @@ if (aa % 2 == 0 || bb % 2 == 0 || cc % 2 == 0) {
 }
 
 // nono exercicio
+
+let aaa = 10
+let bbb = 10
+let ccc = 90
+
+if (aaa % 2 == 1 || bbb % 2 == 1 || ccc % 2 == 1) {
+  console.log (true)
+} else {
+  console.log (false)
+}
+
+// decimo exercicio
+
