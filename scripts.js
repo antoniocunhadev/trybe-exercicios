@@ -129,4 +129,24 @@ if (aaa % 2 == 1 || bbb % 2 == 1 || ccc % 2 == 1) {
 }
 
 // decimo exercicio
+let valorDeCusto  = 10;
+let impostoSobreOCusto = valorDeCusto * 20 / 100;
+let valorCustoTotal = valorDeCusto + impostoSobreOCusto;
+let lucroLiquido = valorCustoTotal * 50 / 100;
+let valorVenda = lucroLiquido + valorCustoTotal;
+let lucroTotal = lucroLiquido * 1000
+
+if (lucroLiquido * 1000 ) {
+  console.log ('O lucro será de', lucroTotal )
+} 
+else if (valorDeCusto <= 0) {
+  console.log ('erro ao inserir valores')
+}
+
+
+
+
+
+
+
 
