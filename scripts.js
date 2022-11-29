@@ -43,20 +43,29 @@ else {
 }
 
 // quinto exercicio
-const ta = 200
-const tb = 20
-const tc = 20
+const angloA = 40
+const angloB = 40
+const angloC = 100
 
-if (ta + tb + tc < 180) {
+let somaAngulos = angloA + angloB + angloC
+
+let todosOsAngulosPositivos = angloA > 0 && angloB > 0 && angloC > 0
+
+if (todosOsAngulosPositivos) {
+  if (somaAngulos === 180) {
   console.log (true)
+  }
+  else {
+    console.log (false)
+  } 
+} else {
+    console.log ('Erro: ângulo inválido');
 }
-else if (ta + tb + tc > 180) {
-  console.log (false)
-}
+
 
 // sexto exercicio
-movimento = 'cao'
-switch (movimento) {
+movimento = 'REi'
+switch (movimento.toLowerCase()) {
   case 'rei':
     console.log('uma casa em qualquer direção')
     break;
@@ -80,7 +89,7 @@ switch (movimento) {
 }
 
 // setimo exercicio
-let porcentagem = 101
+let porcentagem = 70
 
 if (porcentagem >= 90 && porcentagem <= 100) {
   console.log ('A')
@@ -106,7 +115,7 @@ else {
 
 // oitavo exercicio
 
-let aa = 10
+let aa = 1
 let bb = 1
 let cc = 9
 
@@ -118,7 +127,7 @@ if (aa % 2 == 0 || bb % 2 == 0 || cc % 2 == 0) {
 
 // nono exercicio
 
-let aaa = 10
+let aaa = 1
 let bbb = 10
 let ccc = 90
 
@@ -129,23 +138,60 @@ if (aaa % 2 == 1 || bbb % 2 == 1 || ccc % 2 == 1) {
 }
 
 // decimo exercicio
-let valorDeCusto  = 10;
+let valorDeCusto  = 100;
 let impostoSobreOCusto = valorDeCusto * 20 / 100;
 let valorCustoTotal = valorDeCusto + impostoSobreOCusto;
 let lucroLiquido = valorCustoTotal * 50 / 100;
 let valorVenda = lucroLiquido + valorCustoTotal;
-let lucroTotal = lucroLiquido * 1000
 
-if (lucroLiquido * 1000 ) {
-  console.log ('O lucro será de', lucroTotal )
+if (valorDeCusto >= 0 ) {
+  console.log (lucroTotal = lucroLiquido * 1000)
 } 
 else if (valorDeCusto <= 0) {
   console.log ('erro ao inserir valores')
 }
 
+
 // decimo primeiro exercicio
+let inss;
+let ir;
 
+let salario = 6000
 
+if (salario <= 1556.94) {
+  inss = (salario * 8 / 100);
+}
+else if (salario >= 1556.95 && salario <= 2594.92) {
+  inss = (salario * 9 / 100);
+}
+else if (salario >= 2594.93 && salario <= 5189.82) {
+  inss = (salario * 11 / 100);
+}
+else if (salario >= 5189.82) {
+  inss = (570.88);
+} 
+
+const baseSalario = salario - inss;
+
+if (baseSalario <= 1903.98) {
+  ir = 0;
+}
+else if (baseSalario >= 1903.99 && baseSalario <= 2826.65) {
+  ir = (baseSalario * 7.5 / 100 - 142.80);
+}
+else if (baseSalario >= 2826.66 && baseSalario <= 3751.05) {
+  ir = (baseSalario * 15 / 100 - 354.80);
+}
+else if (baseSalario >= 3751.06 && baseSalario <= 4664.68) {
+  ir = (baseSalario * 22.5 / 100 - 636.13);
+}
+else {
+  ir = (baseSalario * 27.5 / 100 - 869.36);
+}
+
+const salarioLiquido = baseSalario - ir;
+
+console.log ('Salario liquido a receber ' + salarioLiquido + ' com desconto de INSS e IR.')
 
 
 
