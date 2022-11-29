@@ -156,7 +156,7 @@ else if (valorDeCusto <= 0) {
 let inss;
 let ir;
 
-let salario = 6000
+let salario = 2500
 
 if (salario <= 1556.94) {
   inss = (salario * 8 / 100);
@@ -170,6 +170,8 @@ else if (salario >= 2594.93 && salario <= 5189.82) {
 else if (salario >= 5189.82) {
   inss = (570.88);
 } 
+
+console.log ('Valor do INSS descontado: R$' + inss)
 
 const baseSalario = salario - inss;
 
@@ -188,10 +190,11 @@ else if (baseSalario >= 3751.06 && baseSalario <= 4664.68) {
 else {
   ir = (baseSalario * 27.5 / 100 - 869.36);
 }
+console.log ('Valor do IR descontado: R$' + ir)
 
 const salarioLiquido = baseSalario - ir;
 
-console.log ('Salario liquido a receber ' + salarioLiquido + ' com desconto de INSS e IR.')
+console.log ('Salario liquido a receber R$' + salarioLiquido);
 
 
 
