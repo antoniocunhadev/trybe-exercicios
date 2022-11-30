@@ -156,7 +156,7 @@ else if (valorDeCusto <= 0) {
 let inss;
 let ir;
 
-let salario = 2500
+let salario = 2070
 
 if (salario <= 1556.94) {
   inss = (salario * 8 / 100);
