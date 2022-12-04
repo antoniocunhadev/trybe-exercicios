@@ -32,9 +32,21 @@ console.log(tasksList);
 
 // [ 'Tomar café', 'Reunião' ] */ 
 
-let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
+/* let tasksList = ['Tomar café', 'Reunião', 'Brincar com o cachorro'];
 
 let indexOfTask = tasksList.indexOf('Tomar café');
 console.log(indexOfTask);
 
-// 1
+// 1 */
+
+/*let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+let menuServices = menu.indexOf ('Serviços');
+
+console.log(menuServices); */
+
+let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+menu.push ('Contato')
+let indexOfPortfolio = menu.indexOf ('Portfólio') ;
+
+console.log(indexOfPortfolio);
+console.log(menu);
