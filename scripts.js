@@ -51,8 +51,54 @@ let indexOfPortfolio = menu.indexOf ('Portfólio') ;
 console.log(indexOfPortfolio);
 console.log(menu); */
 
-let cars = ['Saab', 'Volvo', 'BMW'];
+/* let cars = ['Saab', 'Volvo', 'BMW'];
 
 for (let index = 0; index < cars.length; index += 1) {
-  console.log (cars[index]);
+  console.log (cars[index]); 
+} */
+
+/*let groceryList = ['Arroz', 'Feijão', 'Alfece', 'Melancia'];
+
+for (let index = 0; index < groceryList.length; index += 1) {
+  console.log (groceryList[index]);
+} */
+
+/* let numeros = [1,2,3,4,5];
+for(let numero of numeros) {
+  console.log(numero);
 }
+
+// resultado: 
+//1
+//2
+//3
+//4
+//5 */
+ 
+/*let frase = 'Hello world, tudo bem com voces';
+for (let word of frase) {
+  console.log(word);
+}
+// resultado:
+// "H"
+// "e"
+// "l"
+// "l"
+// "o" */ 
+
+/*let arrOfNumbers = [10, 20, 30];
+for (let sum of arrOfNumbers) {
+  sum += 1;
+  console.log(sum);
+  console.log(arrOfNumbers);
+// Resultado: [10, 20, 30]
+}
+// 11
+// 21
+// 31 */
+
+/*let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+for (let lista of names) {
+  console.log (lista);
+} */ 
