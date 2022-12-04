@@ -44,9 +44,15 @@ let menuServices = menu.indexOf ('Serviços');
 
 console.log(menuServices); */
 
-let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
+/*let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 menu.push ('Contato')
 let indexOfPortfolio = menu.indexOf ('Portfólio') ;
 
 console.log(indexOfPortfolio);
-console.log(menu);
+console.log(menu); */
+
+let cars = ['Saab', 'Volvo', 'BMW'];
+
+for (let index = 0; index < cars.length; index += 1) {
+  console.log (cars[index]);
+}
