@@ -97,13 +97,6 @@ for (let sum of arrOfNumbers) {
 // 21
 // 31 */
 
-/*let names = ['João', 'Maria', 'Antônio', 'Margarida'];
-
-for (let lista of names) {
-  console.log (lista);
-} */ 
-
-
 /*let counter = 0;
 
 while(counter !== 5) {
@@ -118,3 +111,4 @@ let d2 = dice();
 while (d1 === d2) {
     d2 = dice();
 } */
+
