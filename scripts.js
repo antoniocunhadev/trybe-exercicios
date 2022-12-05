@@ -112,3 +112,30 @@ while (d1 === d2) {
     d2 = dice();
 } */
 
+// Jogo da MegaSema
+let meusNumerosDaMega = [3, 6, 10, 45, 47, 59];
+
+let number1 = Math.floor(Math.random() * 60) +1;
+let number2 = Math.floor(Math.random() * 60) +1;
+let number3 = Math.floor(Math.random() * 60) +1;
+let number4 = Math.floor(Math.random() * 60) +1;
+let number5 = Math.floor(Math.random() * 60) +1;
+let number6 = Math.floor(Math.random() * 60) +1;
+
+
+let resultadoMegaSena = [number1, number2, number3, number4, number5, number6];
+
+let acertos = 0;
+
+for (let index = 0; index < meusNumerosDaMega.length; index += 1) {
+  console.log ('Meus numeros da Mega: ', meusNumerosDaMega[index]);
+  for (let index2 = 0; index2 < resultadoMegaSena.length; index2 += 1) {
+    console.log ('Resultado da Mega Sena: ', resultadoMegaSena[index2]);
+    if (meusNumerosDaMega[index] === resultadoMegaSena[index2]) {
+      acertos = acertos + 1;
+    }
+  }
+}
+console.log ('Numeros de acertos: ', acertos);
+
+  
