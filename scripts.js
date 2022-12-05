@@ -149,3 +149,10 @@ for (let index = 0; index < numbers.length; index += 1){
 }
 console.log(somaTotal)
 
+let media = 0
+
+for (let index = 0; index < numbers.length; index += 1){
+  media = somaTotal / 10;
+}
+console.log(media)
+
