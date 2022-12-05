@@ -113,7 +113,7 @@ while (d1 === d2) {
 } */
 
 // Jogo da MegaSema
-let meusNumerosDaMega = [3, 6, 10, 45, 47, 59];
+/*let meusNumerosDaMega = [3, 6, 10, 45, 47, 59];
 
 let number1 = Math.floor(Math.random() * 60) +1;
 let number2 = Math.floor(Math.random() * 60) +1;
@@ -136,6 +136,12 @@ for (let index = 0; index < meusNumerosDaMega.length; index += 1) {
     }
   }
 }
-console.log ('Numeros de acertos: ', acertos);
+console.log ('Numeros de acertos: ', acertos); */
+
+// Exercicio pratico
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+console.log (numbers);
 
   
