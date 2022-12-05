@@ -161,3 +161,5 @@ if (media > 20) {
   console.log ('Valor menor que 20')
 }
 
+let maiorNumero = Math.max.apply(Math,numbers)
+console.log (maiorNumero)
