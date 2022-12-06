@@ -163,3 +163,18 @@ if (media > 20) {
 
 let maiorNumero = Math.max.apply(Math,numbers)
 console.log (maiorNumero)
+
+let impar = []
+
+for (let index = 0; index < numbers.length; index += 1){
+  numerosImpares = (numbers[index] % 2);
+  if (numerosImpares === 1) {
+    impar.push (numbers[index])
+  } else {
+    console.log ('Nenhum valor foi encontrado')
+  }
+}  
+  console.log (impar.length, impar)
+
+
+
