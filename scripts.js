@@ -178,5 +178,11 @@ for (let index = 0; index < numbers.length; index += 1){
 
   let menorNumero = Math.min.apply(Math,numbers)
   console.log (menorNumero)
-  
+
+let array = []
+
+for (let index = 1; index <= 25; index += 1) {
+  array += " Indice " + index;
+}
+console.log (array)
 
