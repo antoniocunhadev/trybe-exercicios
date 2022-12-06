@@ -227,7 +227,8 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
   }
   
   console.log(smallestNumber);
-  
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 let array = []
 
@@ -235,4 +236,19 @@ for (let index = 1; index <= 25; index += 1) {
   array += " Indice " + index;
 }
 console.log (array)
+
+// resolucao para criar um array que vá de 01 a 25  - Gabarito
+
+let numbers = [];
+
+for (let index = 1; index <= 25; index += 1) {
+  numbers.push(index);
+}
+
+console.log(numbers);
+
+for (let index = 0; index < numbers.length; index += 1) {
+  console.log(numbers[index] / 2);
+};
+
 
