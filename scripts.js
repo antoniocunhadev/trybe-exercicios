@@ -179,7 +179,7 @@ for (let index = 0; index < numbers.length; index += 1) {
   }
 }
 
-console.log(higherNumber);
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 let impar = []
 
@@ -193,8 +193,41 @@ for (let index = 0; index < numbers.length; index += 1){
 }  
   console.log (impar.length, impar)
 
-  let menorNumero = Math.min.apply(Math,numbers)
-  console.log (menorNumero)
+  // resolucao para encontrar os numeros impares de uma array - Gabarito
+
+  let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+  let result = 0;
+  
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+      result += 1;
+    }
+  }
+  
+  if (result === 0) {
+    console.log('nenhum valor ímpar encontrado');
+  } else {
+    console.log(result);
+  }
+  
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menorNumero = Math.min.apply(Math,numbers)
+console.log (menorNumero)
+
+// resolucao para encontrar o menor numero de um array - Gabarito
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+  let smallestNumber = numbers[0];
+  
+  for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] < smallestNumber) {
+      smallestNumber = numbers[index];
+    }
+  }
+  
+  console.log(smallestNumber);
+  
 
 let array = []
 
