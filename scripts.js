@@ -171,10 +171,12 @@ for (let index = 0; index < numbers.length; index += 1){
   if (numerosImpares === 1) {
     impar.push (numbers[index])
   } else {
-    console.log ('Nenhum valor foi encontrado')
+    ('Nenhum ímpar valor foi encontrado')
   }
 }  
   console.log (impar.length, impar)
 
-
+  let menorNumero = Math.min.apply(Math,numbers)
+  console.log (menorNumero)
+  
 
