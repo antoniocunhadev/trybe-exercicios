@@ -140,7 +140,11 @@ console.log ('Numeros de acertos: ', acertos); */
 
 // Exercicio pratico
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [5, 9, 3, 19, 70, 100, 8, 2, 35, 27];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  console.log(numbers[index]);
+}
 
 let somaTotal = 0;
 
@@ -161,8 +165,21 @@ if (media > 20) {
   console.log ('Valor menor que 20')
 }
 
+
 let maiorNumero = Math.max.apply(Math,numbers)
 console.log (maiorNumero)
+
+// resolucao para encontrar o maior numero de uma array - Gabarito
+
+let higherNumber = numbers[0];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] > higherNumber) {
+    higherNumber = numbers[index];
+  }
+}
+
+console.log(higherNumber);
 
 let impar = []
 
