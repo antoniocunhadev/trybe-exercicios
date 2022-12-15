@@ -1,15 +1,26 @@
-let info = {
+let info = [
+{
   personagem: 'Margarida',
   origem: 'Pato Donald',
   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
   recorrente: 'Sim'
-};
+},
 
-for (let chaves in info) {
-  console.log (chaves)
+{
+  personagem: 'Tio Patinhas',
+  origem: 'Christmas on Bear Mountain, Dell"s Four Color Comics #178',
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim'
+}
+]
+
+console.log (info[0].personagem + ' e ' + info[1].personagem)
+console.log (info[0].origem + ' e ' + info[1].origem)
+console.log (info[0].nota + ' e ' + info[1].origem)
+
+if (info[0].recorrente === 'Sim' && info[1].recorrente === 'Sim') {
+  console.log ('Ambos recorrentes')
 }
 
-for (let key in info) {
-  console.log (info[key])
-}
+
 
