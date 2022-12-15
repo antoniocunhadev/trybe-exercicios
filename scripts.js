@@ -9,3 +9,7 @@ for (let chaves in info) {
   console.log (chaves)
 }
 
+for (let key in info) {
+  console.log (info[key])
+}
+
