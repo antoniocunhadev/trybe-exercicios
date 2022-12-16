@@ -33,9 +33,23 @@ let leitor = {
       autor: 'Daniela Kopsch',
       editora: 'Tordesilhas',
     },
+    
+    {
+      titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+      autor: 'JK Rowling',
+      editora: 'Rocco',
+    },
+
+    {
+      titulo: 'Harry Potter e o Prisioiro de Azkaban',
+      autor: 'JK Rling',
+      editora: 'Rco',
+    }
+    
   ],
 };
 console.log ('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0].titulo)
+console.log ('Julia tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
 
 
 
