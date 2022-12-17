@@ -51,5 +51,14 @@ let leitor = {
 console.log ('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[0].titulo)
 console.log ('Julia tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
 
+// Exercicios funções 
 
+//Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.
+
+function verificaPalindrome(string){
+  let reverse = string.split('').reverse().join('')
+  return string === reverse
+}
+console.log(verificaPalindrome('arara'));
+console.log(verificaPalindrome('desenvolvimento'))
 
