@@ -62,3 +62,18 @@ function verificaPalindrome(string){
 console.log(verificaPalindrome('arara'));
 console.log(verificaPalindrome('desenvolvimento'))
 
+//Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+function maiorValor(numbers) {
+  let maiorIndice = 0
+  for (indice in numbers) {
+    if (numbers[maiorIndice] < numbers[indice]) {
+      maiorIndice = indice
+    }
+  }
+  return maiorIndice
+}
+console.log (maiorValor([2, 3, 6, 7, 10, 1]))
+
+
+
