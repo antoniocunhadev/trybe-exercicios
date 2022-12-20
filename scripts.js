@@ -75,5 +75,20 @@ function maiorValor(numbers) {
 }
 console.log (maiorValor([2, 3, 6, 7, 10, 1]))
 
+// Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+function menorValor (numbers) {
+  let menorIndice = 0
+  for (indice in numbers) {
+    if (numbers[menorIndice] > numbers[indice]) {
+      menorIndice = indice
+    }
+  }
+  return menorIndice
+}
+console.log (menorValor([2, 4, 6, 7, 10, 0, -3]))
 
 
+
+
+ 
