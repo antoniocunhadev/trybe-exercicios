@@ -144,8 +144,8 @@ console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3])); // 2
 function somaTodosNumeros(numero) {
   let total = 0;
 
-  for (let index = 1; index <= numero; index += 1) {
-    total = total + index;
+  for (let index = 0; index <= numero; index += 1) {
+    total += index;
   }
   return total;
 }
@@ -157,6 +157,42 @@ console.log(somaTodosNumeros(5));
 let N = 5
 let resultado = N
 for (let index = 1; index < N; index +=1) {
-  resultado += index
+  resultado *= index
 }
 console.log (resultado)
+
+// Exercicio Bonus - criar um programa que leia numeros romanos e transforme em numeros inteiros.
+
+const numerosRomanos = {
+  i: 1,
+  v: 5,
+  x: 10,
+  l: 50,
+  c: 100,
+  d: 500,
+  m: 1000,
+};
+function romanoParaDecimal(numero) {
+  numero = numero.toLowerCase();
+  const len = numero.length;
+  let soma = numerosRomanos[numero[len - 1]];
+  let atual = numerosRomanos[numero[len - 1]];
+
+  for (let i = 2; i <= len; i += 1) {
+    const prox = numerosRomanos[numero[len - i]];
+
+    if (atual <= prox) {
+      soma += prox;
+    } else {
+      soma -= prox;
+    }
+
+    atual = prox;
+  }
+
+  return soma;
+}
+
+console.log(romanoParaDecimal('MMXVIII')); // 2018
+console.log(romanoParaDecimal('VI')); // 6
+console.log(romanoParaDecimal('IV')); // 4
