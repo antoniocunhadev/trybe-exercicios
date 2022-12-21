@@ -138,3 +138,25 @@ function maisRepetido(numeros) {
 }
 
 console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3])); // 2
+
+//Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+function somaTodosNumeros(numero) {
+  let total = 0;
+
+  for (let index = 1; index <= numero; index += 1) {
+    total = total + index;
+  }
+  return total;
+}
+
+console.log(somaTodosNumeros(5)); 
+
+// Exemplo sem função
+
+let N = 5
+let resultado = N
+for (let index = 1; index < N; index +=1) {
+  resultado += index
+}
+console.log (resultado)
