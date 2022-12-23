@@ -33,12 +33,15 @@ imprimeIdade()
   let b = 5;
   console.log(`O resultado da soma de ${a} e ${b} é: ${a + b})`);
 
-  numeroAleatorio = () => Math.random() 
-
+  const numeroAleatorio = () => Math.random() 
   console.log(numeroAleatorio());
 
   const hello = (nome) => `Olá, ${nome}!`
   console.log(hello('Ivan'));
 
-  
- 
+nome = 'antonio'
+var nome;
+console.log(nome);
+
+const nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`
+console.log(nomeCompleto('Ivan', 'Pires'));
