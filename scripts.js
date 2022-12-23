@@ -36,3 +36,9 @@ imprimeIdade()
   numeroAleatorio = () => Math.random() 
 
   console.log(numeroAleatorio());
+
+  const hello = (nome) => `Olá, ${nome}!`
+  console.log(hello('Ivan'));
+
+  
+ 
