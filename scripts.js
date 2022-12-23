@@ -32,3 +32,7 @@ imprimeIdade()
   let a = 3;
   let b = 5;
   console.log(`O resultado da soma de ${a} e ${b} é: ${a + b})`);
+
+  numeroAleatorio = () => Math.random() 
+
+  console.log(numeroAleatorio());
