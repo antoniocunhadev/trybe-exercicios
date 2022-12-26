@@ -32,3 +32,73 @@ console.log(`Essa é a área do círculo: ${circleArea(5)}`);
 //Area do circulo sem função
 let raio = 5
 console.log (Math.PI * (raio**2))
+
+//Crie uma função que receba uma frase como parâmetro e retorne a maior palavra da frase.
+
+longestWord ('Antonio foi no banheiro e não sabemos o que aconteceu') // retorna 'aconteceu'
+
+function longestWord (frase) {
+  let array = frase.split(' ')
+  let maiorPalavra = array[0]
+
+  for (let index = 0; index < array.length; index +=1) {
+    if (array[index].length > maiorPalavra.length  ) {
+      maiorPalavra = array[index]
+    }   
+}
+return maiorPalavra
+}
+console.log(longestWord ('Antonio foi no banheiro e não sabemos o que aconteceu'));
+
+// sem o uso da funcao
+let texto = 'Antonio foi no banheiro e não sabemos o que aconteceu'
+let array = texto.split(' ');
+let maiorPalavra = array[0]
+
+
+for (let index in array) {
+  if (array[index].length > maiorPalavra.length  ) {
+    maiorPalavra = array[index]
+  }
+} 
+console.log(maiorPalavra)
+
+// usando for of sem o usa da funcao
+
+let texto = 'Antonio foi no banheiro e não sabemos o que aconteceu';
+let array = texto.split(' ');
+let tamanhoMaximo = 0
+let maiorPalavra = '';
+
+for (let palavra of array) {
+  if (palavra.length > tamanhoMaximo) {
+    tamanhoMaximo = palavra.length
+    maiorPalavra = palavra
+  }
+}
+console.log(maiorPalavra);
+
+// for of utilizando funcao
+
+function longestWord (frase) {
+  let array = frase.split(' ')
+  let tamanhoMaximo = 0
+  let maiorPalavra = ''
+
+  for (let palavra of array) {
+    if (palavra.length > tamanhoMaximo) {
+      tamanhoMaximo = palavra.length
+      maiorPalavra = palavra
+    }
+}
+return maiorPalavra
+}
+console.log(longestWord ('Antonio foi no banheiro e não sabemos o que aconteceu'));
+
+
+
+
+
+
+
+
