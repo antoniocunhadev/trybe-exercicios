@@ -95,16 +95,6 @@ return maiorPalavra
 }
 console.log(longestWord ('Antonio foi no banheiro e não sabemos o que aconteceu'));
 
-function sum(a, b) {
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('parameters must be numbers');
-  }
-
-  return a + b;
-}
-
-module.exports = sum;
-
 
 
 
