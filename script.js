@@ -1,21 +1,18 @@
-document.getElementById("header-container").style.backgroundColor = "green";
+// Refatorando o codigo, utilizando função
+const headerContainer = document.getElementById("header-container");
+headerContainer.style.backgroundColor = "green";
 
-document.getElementsByClassName("emergency-tasks")[0].style.backgroundColor =
-  "orange";
+function alteraCor (elemento, cor) {
+  for (let index = 0; index < alteraCor.length; index += 1) {
+    document.getElementsByClassName(elemento).style.backgroundColor = cor
+  }
+}
+alteraCor ('emergency-tasks', 'blue')
+alteraCor ('no-emergency-tasks', 'black')
 
-document.getElementsByClassName("no-emergency-tasks")[0].style.backgroundColor =
-  "yellow";
+function alteraCor (elemento, cor) {
+  document.querySelector(elemento).style.backgroundColor = cor
+}
+alteraCor ('.emergency-tasks', 'brown')
+alteraCor ('.no-emergency-tasks', 'green')
 
-document.getElementById("footer-container").style.backgroundColor = "green";
-
-document.querySelectorAll(".emergency-tasks h3")[0].style.backgroundColor =
-  "blue";
-
-document.querySelectorAll(".emergency-tasks h3")[1].style.backgroundColor =
-  "blue";
-
-  document.querySelectorAll(".no-emergency-tasks h3")[0].style.backgroundColor =
-  "brown";
-
-  document.querySelectorAll(".no-emergency-tasks h3")[1].style.backgroundColor =
-  "brown";
