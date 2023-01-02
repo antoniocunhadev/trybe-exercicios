@@ -1,18 +1,27 @@
-// Refatorando o codigo, utilizando função
-const headerContainer = document.getElementById("header-container");
-headerContainer.style.backgroundColor = "green";
+// arquivo script.js
 
-function alteraCor (elemento, cor) {
-  for (let index = 0; index < alteraCor.length; index += 1) {
-    document.getElementsByClassName(elemento).style.backgroundColor = cor
-  }
-}
-alteraCor ('emergency-tasks', 'blue')
-alteraCor ('no-emergency-tasks', 'black')
+console.log(document.querySelector("#elementoOndeVoceEsta"));
 
-function alteraCor (elemento, cor) {
-  document.querySelector(elemento).style.backgroundColor = cor
-}
-alteraCor ('.emergency-tasks', 'brown')
-alteraCor ('.no-emergency-tasks', 'green')
+console.log(
+  (document.querySelector(
+    "#elementoOndeVoceEsta"
+  ).parentNode.style.backgroundColor = "blue")
+);
 
+console.log(
+  (document.querySelector("#primeiroFilhoDoFilho").innerText = "Primeiro filho do filho")
+);
+
+console.log(document.querySelector('#pai').firstElementChild);
+
+console.log(document.querySelector("#elementoOndeVoceEsta").previousElementSibling);
+
+console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling);
+
+console.log(
+  (document.querySelector("#elementoOndeVoceEsta").nextElementSibling)
+);
+
+console.log(
+  (document.querySelector("#pai").children[2])
+);
