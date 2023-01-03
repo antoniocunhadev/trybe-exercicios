@@ -1,22 +1,18 @@
-const pai = document.getElementById("pai"); // Recupere o elemento com o id pai
-const irmaoElementoOndeVoceEsta = document.createElement("section"); // Crie um novo elemento
-irmaoElementoOndeVoceEsta.id = "irmaoElementoOndeVoceEsta";
-pai.appendChild(irmaoElementoOndeVoceEsta); // Adicione o elemento criado como filho do elemento com o id `pai`
+// let ondeTo = document.getElementById('elementoOndeVoceEsta');
+// ondeTo.removeChild(ondeTo.firstElementChild)
+// console.log(ondeTo);
 
-console.log(document.getElementById("irmaoElementoOndeVoceEsta"));
+// utilizando 'for' quando existe mais de um filho
 
-const ondeEuEstou = document.getElementById("elementoOndeVoceEsta");
-const terceiroEUltimoFilho = document.createElement("section");
-terceiroEUltimoFilho.id = "terceiroEUltimoFilho";
-ondeEuEstou.appendChild(terceiroEUltimoFilho);
+let ondeTo = document.getElementById("elementoOndeVoceEsta");
 
-console.log(document.getElementById("terceiroEUltimoFilho"));
+let filhos = ondeTo.childNodes;
 
-const primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
-const filhoDoFilho = document.createElement("section");
-filhoDoFilho.id = "filhoDoFilho";
-primeiroFilhoDoFilho.appendChild(filhoDoFilho);
+for (let index = filhos.length - 1; index >= 0; index -= 1) {
+  const filhoAtual = filhos[index];
 
-console.log(document.getElementById("filhoDoFilho"));
-
-console.log(document.getElementById('filhoDoFilho').parentElement.parentElement.parentElement.children[2]);
+  if (filhoAtual.id === "elementoOndeVoceEsta") {
+    filhoAtual.removeChild(filhoAtual.firstElementChild);
+  }
+}
+console.log(filhoAtual)
