@@ -11,3 +11,12 @@ terceiroEUltimoFilho.id = "terceiroEUltimoFilho";
 ondeEuEstou.appendChild(terceiroEUltimoFilho);
 
 console.log(document.getElementById("terceiroEUltimoFilho"));
+
+const primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
+const filhoDoFilho = document.createElement("section");
+filhoDoFilho.id = "filhoDoFilho";
+primeiroFilhoDoFilho.appendChild(filhoDoFilho);
+
+console.log(document.getElementById("filhoDoFilho"));
+
+console.log(document.getElementById('filhoDoFilho').parentElement.parentElement.parentElement.children[2]);
