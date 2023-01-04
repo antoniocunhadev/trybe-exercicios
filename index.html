@@ -132,7 +132,6 @@
       function addClassTitle () {
         let h1 = document.getElementsByTagName('h1')[0]
         h1.className = 'title'
-        body.appendChild(h1)
       }
       addClassTitle()
 
@@ -141,9 +140,14 @@
         for (let index = 0; index < 3; index +=1) {
         h3[index].className = 'description'
         }
-        main.appendChild(h3)
       }
       descriptionTagsH3()
+
+      function removeChild() {
+        let leftContent = document.querySelector('.left-content')
+        main.removeChild(leftContent)
+      }
+      removeChild()
     </script>
   </body>
 </html>
