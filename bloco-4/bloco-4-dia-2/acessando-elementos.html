@@ -1,0 +1,22 @@
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+  <script>
+    console.log(document.getElementById("elementoOndeVoceEsta"));
+    console.log(document.getElementById("elementoOndeVoceEsta").parentNode.style.backgroundColor = "pink");
+    console.log(document.getElementById('primeiroFilhoDoFilho').innerText = 'Add um texto ao filho do filho');
+    console.log(document.getElementById('pai').firstElementChild);
+    console.log(document.getElementById('elementoOndeVoceEsta').previousElementSibling);
+    console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
+    console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
+    console.log(document.getElementById('pai').lastElementChild.previousElementSibling);    
+  </script>
+</main>
