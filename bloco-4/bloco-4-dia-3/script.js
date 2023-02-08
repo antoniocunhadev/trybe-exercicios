@@ -40,11 +40,10 @@ myWebpage.addEventListener("dblclick", () => {
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
-// A maneira abaixo é um exemplo para vc fazer direto, aplicando em apenas um elemento. 
+// A maneira abaixo é um exemplo para vc fazer direto, aplicando em apenas um elemento.
 // myWebpage.addEventListener("mouseover", (event) => {
 //   event.target.style.color = "gray";
 // });
-
 
 const mudaACor = (event) => {
   event.target.style.color = "gray";
