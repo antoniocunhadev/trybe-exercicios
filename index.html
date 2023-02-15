@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let body = document.getElementsByTagName("body")[0];
+      let h1 = document.createElement("h1");
+      h1.innerHTML = "TrybeTrip - Agência de Viagens";
+      body.appendChild(h1);
+
+      let main = document.createElement("main");
+      main.className = "main-content";
+      body.appendChild(main);
+
+      function sectionCenterContent() {
+        let section = document.createElement("section");
+        section.className = "center-content";
+        main.appendChild(section);
+      }
+      sectionCenterContent();
+
+      function criaTagP() {
+        let section = document.getElementsByClassName("center-content")[0];
+        let p = document.createElement("p");
+        p.innerHTML = "Criando a TAG 'p'";
+        section.appendChild(p);
+      }
+      criaTagP();
+
+      function sectionLeftContent() {
+        let section = document.createElement("section");
+        section.className = "left-content";
+        main.appendChild(section);
+      }
+      sectionLeftContent();
+
+      function sectionRightContent() {
+        let section = document.createElement("section");
+        section.className = "right-content";
+        main.appendChild(section);
+      }
+      sectionRightContent();
+
+      function createImg() {
+        let section = document.getElementsByClassName("left-content")[0];
+        let img = document.createElement("img");
+        img.className = "small-image";
+        img.src = "https://picsum.photos/200";
+        section.appendChild(img);
+      }
+      createImg();
+
+      function createList() {
+        let section = document.getElementsByClassName("right-content")[0];
+        let ul = document.createElement("ul");
+
+        let array = [
+          "um",
+          "dois",
+          "tres",
+          "quatro",
+          "cinco",
+          "seis",
+          "sete",
+          "oito",
+          "nove",
+          "dez",
+        ];
+
+        for (let index = 0; index < 10; index += 1) {
+          let li = document.createElement("li");
+          li.innerText = array[index];
+          ul.appendChild(li);
+        }
+        section.appendChild(ul);
+      }
+      createList();
+
+      function createTagsH3() {
+        let main = document.getElementsByClassName("main-content")[0];
+        for (let index = 0; index < 3; index += 1) {
+          let h3 = document.createElement("h3");
+          main.appendChild(h3);
+        }
+      }
+      createTagsH3();
+
+      function addClassTitle() {
+        let h1 = document.getElementsByTagName("h1")[0];
+        h1.className = "title";
+      }
+      addClassTitle();
+
+      function descriptionTagsH3() {
+        let h3 = document.querySelectorAll("h3");
+        for (let index = 0; index < 3; index += 1) {
+          h3[index].className = "description";
+        }
+      }
+      descriptionTagsH3();
+
+      function removeChild() {
+        let leftContent = document.querySelector(".left-content");
+        main.removeChild(leftContent);
+      }
+      removeChild();
+
+      function centralizeSection() {
+        let rightContent = document.querySelector(".right-content");
+        rightContent.style.marginRight = "auto";
+      }
+      centralizeSection();
+
+      function changeColor() {
+        let centerContent = document.querySelector(".center-content");
+        centerContent.style.backgroundColor = "green";
+      }
+      changeColor();
+
+      function removeElementList() {
+        let ul = document.getElementsByTagName("ul")[0];
+        for (let index = 0; index < 2; index += 1) {
+          ul.lastElementChild.remove();
+        }
+      }
+      removeElementList();
+    </script>
+  </body>
+</html>
