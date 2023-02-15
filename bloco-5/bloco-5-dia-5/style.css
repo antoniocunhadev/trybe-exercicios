@@ -84,15 +84,8 @@ p strong {
   }
 }
 
-
 @media screen and (max-width: 500px ){
-  .trick {
-   display: none;
+  p.trick {
+   color: black;
   }
 }
-
-
-
-
-
-
