@@ -78,11 +78,12 @@ p strong {
   }
 }
 
-@media screen and (min-width: 650px ) and (max-width: 950px){
+@media screen and (min-width: 0px ) and (max-width: 650px), (min-width: 950px ) {
   .card:nth-child(3) {
    display: block;
   }
 }
+
 
 @media screen and (max-width: 500px ){
   .trick {
