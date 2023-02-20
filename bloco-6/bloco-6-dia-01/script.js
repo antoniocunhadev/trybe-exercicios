@@ -32,28 +32,21 @@ const pessoaEstudante = {
   email: 'antonio.frango@gmail.com'
 }
 
-console.log(pessoaEstudante);
+// newKey = 'telefone'
+// const telefone = '(13) 99122-7327'
+// pessoaEstudante[newKey] = telefone
+// console.log(pessoaEstudante);
 
 const adicionaPropriedade = (objeto, novaPropriedade, valor) => {
   objeto[novaPropriedade] = valor
 };
 
-newKey = 'telefone'
-const telefone = '(13) 99122-7327'
+adicionaPropriedade(pessoaEstudante, 'telefone', '(13) 99122-7327')
 
-adicionaPropriedade(pessoaEstudante, newKey, telefone)
-console.log(pessoaEstudante);
+adicionaPropriedade(pessoaEstudante, 'gitHub' , 'https://github.com/antoniocunhadev')
 
-newKey = 'github'
-const gitHub = 'https://github.com/antoniocunhadev'
+adicionaPropriedade(pessoaEstudante,  'linkedin' , 'https://www.linkedin.com/in/antoniocunhadev/')
 
-adicionaPropriedade(pessoaEstudante, newKey, gitHub)
-console.log(pessoaEstudante);
-
-newKey = 'linkedin'
-const linkedin = 'https://www.linkedin.com/in/antoniocunhadev/'
-
-adicionaPropriedade(pessoaEstudante,  newKey, linkedin)
 console.log(pessoaEstudante);
 
 
