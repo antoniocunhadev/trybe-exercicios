@@ -36,3 +36,4 @@ listSkills(student2);
 
 console.log('Estudante 3');
 listSkills(student3);
+
