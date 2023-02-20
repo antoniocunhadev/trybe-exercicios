@@ -53,7 +53,7 @@ console.log(pessoaEstudante);
 newKey = 'linkedin'
 const linkedin = 'https://www.linkedin.com/in/antoniocunhadev/'
 
-adicionaPropriedade(pessoaEstudante, newKey, linkedin)
+adicionaPropriedade(pessoaEstudante,  newKey, linkedin)
 console.log(pessoaEstudante);
 
 
