@@ -17,8 +17,8 @@ const sum = (value1, value2) => {
 
 console.log(sum(2, 'f'));
 
-const subtrair = (value1, value2) => {
 
+const subtrair = (value1,value2) => {
   try {
     verifyIsNumber (value1,value2)
     return value1 - value2
@@ -27,4 +27,4 @@ const subtrair = (value1, value2) => {
   }
 }
 
-console.log(subtrair(5, '3'))
+console.log(subtrair(5, 1))
