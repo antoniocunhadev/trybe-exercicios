@@ -4,12 +4,12 @@
 //   job: 'Teacher',
 // };
 
-// let newKey = 'lastName';
-// const lastName = 'Ferreira';
-
 // const adicionaPropriedade = (objeto, novaPropriedade, valor) => {
 //   objeto[novaPropriedade] = valor;
 // };
+
+// let newKey = 'lastName';
+// const lastName = 'Ferreira';
 
 // adicionaPropriedade(customer, newKey, lastName);
 // console.log(customer);
@@ -32,10 +32,10 @@ const pessoaEstudante = {
   email: 'antonio.frango@gmail.com'
 }
 
-// newKey = 'telefone'
-// const telefone = '(13) 99122-7327'
-// pessoaEstudante[newKey] = telefone
-// console.log(pessoaEstudante);
+newKey = 'telefone'
+const telefone = '(13) 99122-7327'
+pessoaEstudante[newKey] = telefone
+console.log(pessoaEstudante);
 
 const adicionaPropriedade = (objeto, novaPropriedade, valor) => {
   objeto[novaPropriedade] = valor
