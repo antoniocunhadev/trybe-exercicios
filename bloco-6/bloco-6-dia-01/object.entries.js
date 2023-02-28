@@ -7,7 +7,7 @@ const coutries = {
 
 
 const pairKeyValue = Object.entries(coutries);
-console.log(pairKeyValue);
+// console.log(pairKeyValue);
 
 // for(index in pairKeyValue) {
 //   console.log('--------');
