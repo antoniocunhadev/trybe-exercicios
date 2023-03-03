@@ -16,4 +16,14 @@ const listNames = ['Maria', 'Manuela', 'Jorge', 'Ricardo', 'Wilson'];
 const verifyFirstLetter = (letter, names) => names.some((name) => name[0] === letter);
 
 console.log(verifyFirstLetter('J', listNames)); // true
-console.log(verifyFirstLetter('X', listNames)); // false
+console.log(verifyFirstLetter('W', listNames)); // false
+
+const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+
+const list = (arr, name) => {
+  //Adicione seu código aqui
+  return arr.some((nameList) => nameList === name)
+};
+
+console.log(list(names, 'Ana'));
+console.log(list(names, 'Pedro'));
