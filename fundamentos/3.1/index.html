@@ -1,46 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>#GoTrybe</title>
-  </head>
-  <body>
-    <h1 class="header"><em>Combinações e Classes Descendentes</em></h1>
-    <br />
-    <h3 class="header">Top 5 frases memoráveis:</h3>
-    <ol class="background li italic">
-      <li class="impar"><em>Com grandes poderes vêm grandes responsabilidades.</em> - Tio Ben (Homem Aranha)</li>
-      <li class="par"><em>Houston, temos um problema.</em> - Jack Swigert</li>
-      <li class="impar"><em>Sempre parece impossível até que esteja feito.</em> - Nelson Mandela</li>
-      <li class="par"><em>Parte da jornada é o fim.</em> - Tony Stark (Homem de Ferro)</li>
-      <li class="impar"><em>Às vezes, o melhor que podemos fazer é começar novamente.</em> - Steve Rogers (Capitão América)</li>
-    </ol>
-    <h3 class="header">As maiores linguagens de programação:</h3>
-    <ul class="li">
-      <li class="backlist">Python</li>
-      <li class="backlist java">Java</li>
-      <li class="backlist java">JavaScript</li>
-      <li>C#</li>
-      <li>C / C++</li>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranking</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .first {
+      background-color: rgb(235, 200, 84);
+      font-size: 20px;
+      height: 50px;
+      text-align: center;
+      width: 200px;
+      /* Resposta */
+      display: block;
+      margin-left: 200px;
+    }
+
+    .second {
+      background-color: rgb(219, 219, 219);
+      font-size: 20px;
+      height: 50px;
+      text-align: center;
+      width: 300px;
+      /* Resposta */
+      display: inline-block;
+    }
+
+    .third {
+      background-color: rgb(170, 142, 106);
+      font-size: 20px;
+      height: 50px;
+      text-align: center;
+      width: 300px;
+      /* Resposta */
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    /* Resposta */
+    h3 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hackathon Results</h1>
+  </header>
+  <section>
+    <ul>
+      <li class="first">1º - Equipe 1</li>
+      <li class="second">2º - Equipe 2</li>
+      <li class="third">3º - Equipe 3</li>
     </ul>
-    <h3 class="header">Maiores aliados de uma pessoa desenvolvedora:</h3>
-    <ul class="li">
-      <li>
-        <a class="aliados" id="orange" href="https://pt.stackoverflow.com/" target="_blank">StackOverflow</a>
-      </li>
-      <li>
-        <a class="aliados" id="green" href="https://www.w3schools.com/" target="_blank">W3Schools</a>
-      </li>
-      <li>
-        <a class="aliados" id="black" href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a>
-      </li>
-      <li>
-        <a class="aliados" id="yellow" href="https://devdocs.io/" target="_blank">DevDocs</a>
-      </li>
-      <li>
-        <a class="aliados" id="greenlight" href="https://app.betrybe.com/" target="_blank">Trybe</a>
-      </li>
+  </section>
+  <section>
+    <h3>Premiação Primeiro Lugar:</h3>
+    <ul>
+      <li>| R$ 1000,00 por integrante da equipe |</li>
+      <li>| Bootcamp de 2 meses com possibilidade de contratação |</li>
     </ul>
-  </body>
+    <h3>Premiação Segundo Lugar:</h3>
+    <ul>
+      <li>| R$ 600,00 por integrante da equipe |</li>
+      <li>| Participação no processo seletivo para o Bootcamp |</li>
+    </ul>
+    <h3>Premiação Terceiro Lugar:</h3>
+    <ul>
+      <li>| R$ 300,00 por integrante da equipe |</li>
+      <li>| Participação no processo seletivo para o Bootcamp |</li>
+    </ul>
+  </section>
+</body>
 </html>
