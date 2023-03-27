@@ -1,37 +1,52 @@
-h1 {
-  color: seagreen;
-  font-size: 65px;
-  font-family: sans-serif, Helvetica; 
+ol.background {
+  background-color: yellow;
+}
+li.par {
+  color: green;
+}
+li.impar {
+  text-transform: uppercase;
 }
 
-.cor-de-fundo {
-  background-color: whitesmoke;
+.header {
+  color: red;
 }
 
-p {
-  font-weight: 600;
+h1.header {
+  font-size: 40px;
+  border: 1px solid black;
 }
 
-body {
-  font-size: 16px;
+.li {
+  font-size: 20px;
 }
 
-li {
-  font-style: italic;
-  line-height: 60px;
-  text-align: center;
-  text-decoration: underline;
-  font-size: 2em;
+.italic {
+  font-weight: bold;
 }
 
-#verde {
-  background-color: green;
+li.backlist {
+  color: blue;
+}
+li.java {
+  background-color: pink;
 }
 
-#verde-escuro {
-  background-color: seagreen;
+.aliados:hover {
+  font-weight: bold;
 }
-
-#azul {
-  background-color: blue;
+#orange:hover {
+  color: orange;
+}
+#green:hover {
+  color: green;
+}
+#black:hover {
+  color: black;
+}
+#yellow:hover {
+  color: yellow;
+}
+#greenlight:hover {
+  color: greenyellow;
 }
